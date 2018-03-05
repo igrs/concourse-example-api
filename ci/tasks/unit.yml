@@ -14,10 +14,9 @@ outputs:
 - name: reports
 
 run:
+  dir: api
   path: sh
   args:
   - -exc
   - |
-    pwd
-    ls -l api
-    go test api/test/ > reports/api-report.html
+    go test test/ > ../reports/api-report.html
