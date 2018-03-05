@@ -10,10 +10,12 @@ image_resource:
 inputs:
 - name: api
 
+outputs:
+- name: reports
+
 run:
-  dir: api/test
   path: sh
   args:
   - -exc
   - |
-    go test
+    go test api/test/ > reports/api-report.html
