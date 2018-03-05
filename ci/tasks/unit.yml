@@ -14,9 +14,8 @@ outputs:
 - name: reports
 
 run:
-  dir: api
   path: sh
   args:
   - -exc
   - |
-    go test test/ > ../reports/api-report.html
+    go test api/test/server_test.go > .reports/api-report.html
