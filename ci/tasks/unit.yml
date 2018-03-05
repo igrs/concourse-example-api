@@ -18,6 +18,4 @@ run:
   args:
   - -exc
   - |
-    pwd
-    ls -l
-    go test api/test/server_test.go > reports/api-report.html
+    go test api/test/server_test.go
