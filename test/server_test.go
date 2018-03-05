@@ -24,3 +24,11 @@ func TestFactorial(t *testing.T) {
 		t.Errorf("got %v\nwant %v", actual, expected)
 	}
 }
+
+func TestFailed(t *testing.T) {
+	actual := 100
+	expected := 120
+	if actual != expected {
+		t.Errorf("got %v\nwant %v", actual, expected)
+	}
+}
